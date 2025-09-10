@@ -664,6 +664,8 @@
 		      const key = tab.classList[1]; // e.g. "standings", "top-scorers"...
 		      const cardToShow = document.querySelector(`.card.${key}`);
 		      if (cardToShow) cardToShow.style.display = "block";
+		      document.querySelector(".content-filter__toggle").classList.remove("content-filter__toggle--active");
+		      document.querySelector(".content-filter__list").classList.remove("content-filter__list--expanded");
 		    });
 		  });
 
